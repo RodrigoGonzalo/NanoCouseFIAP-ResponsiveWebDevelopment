@@ -1,0 +1,21 @@
+/*O "*" é um seletor universal, qualquer estilo aplicado aqui, será
+aplicado em todos os elementos do documento, no caso aqui, mudamos a fonte*/
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Estilizando o h1, h2, h3 de maneira separada*/
+
+h1{
+    color: brown;
+}
+
+h2{
+    color: blue;
+}
+
+h3{
+    color: yellowgreen;
+    
+}

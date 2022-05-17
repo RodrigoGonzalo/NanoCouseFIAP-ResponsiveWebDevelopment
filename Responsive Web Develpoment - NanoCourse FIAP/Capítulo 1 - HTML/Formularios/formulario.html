@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Teste</title>
+
+</head>
+<body>
+    <!--form serve para criar formulários, tudo entre essas tags é um formulário HTML-->
+    <!--GET e POST são métodos para submeter um formulário-->
+    <form id="formulario" method="post" action="formulario.html">
+        
+        <!--O label representa uma parte do formulário como nesse caso o nome do cidadão-->
+        <label for="nome">Nome Completo: </label>
+        <input id = "nome" type="text" maxlength="50" value="Fulano" disabled required> <!--required significa campo obrigatório-->
+        
+        <label for = "idade">Idade: </label>
+        <input id = "idade" type="number" required>
+
+        <label for = "email">Email: </label>
+        <input id = "email" type="email" required>
+
+        <label for="newsletter"></label>
+        <input type="radio" name="newsletter" value="Sim">Sim
+        <input type="radio" name="newsletter" value="Não">Não
+        <br>
+
+        <label for = "estadoCivil">Estado Civil</label>
+        <!--Select cria uma caixa de opções-->
+        <select name  ="estadoCivil" id="estadoCivil">
+            <option value="S">Solteiro</option>
+            <option value="C">Casado</option>
+            <option value="V">Viuvo</option>
+            <option value="D" selected>Divorciado</option>
+
+        </select>
+
+        <!--Caixa de texto, como por exemplo as caixas de opiniões-->
+        <label for="descrição">Descrição</label>
+        <textarea id="descricao" rows="5" cols="50">Descrição</textarea>
+
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

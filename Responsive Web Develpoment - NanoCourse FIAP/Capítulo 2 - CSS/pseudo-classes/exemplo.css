@@ -1,0 +1,33 @@
+/*Vamos estilizar os links
+- A primeira pseudo-calsse que vamos usar vai ser o link
+- O link muda a cor do link não visitado*/
+
+a:link{
+    color: crimson;
+}
+
+/*Agora vamos ver o visited, que estiliza links visitados*/
+
+a:visited{
+    color: rgb(238, 255, 0);
+}
+
+/*Active - estiliza links ativos, ativos é quando o link está sendo clicado*/
+
+a:active{
+    color: aqua;
+}
+
+/*Hover - estiliza quando o link do mouse está em cima*/
+
+a:hover{
+    color: deepskyblue;
+}
+
+
+/*Vamos estilizar os campos nome e email para isso, vamos usar o focus
+o focus estiliza o campo quando ele é clicado*/
+
+input:focus{
+    background-color: gray;
+}

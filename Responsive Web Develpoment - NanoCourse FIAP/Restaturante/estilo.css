@@ -1,0 +1,155 @@
+/*Vamos estilizar o nosso cabeçalho ele está na tag <header> que foi atribuida com a class cabecalho
+*/
+
+.cabecalho{
+    background-color: #ffe600;
+    padding: 30px;
+    height: 140px;
+}
+
+/*
+    Agora vamos estilizar a nossa <div> que vem depois do header e está atribuida
+    com a class container, e ela engloba o nosso h1 que estilizamos no começo, é o 
+    primeiro elemento estilizado
+*/
+
+.container{
+    /*vertical || horizontal*/
+    margin: 0 auto;
+    width: 900px;
+    position: relative; 
+    /*faz a camada do container ser referência para o position absolute do <nav>
+    auxiliando o posicionamento dentro da div*/
+}
+
+
+/* 
+ Vamos estilizar o cabeçalho
+ Ele é um h1 e está dentro de um header
+ Uma boa prática é nomear usando uma class, caso haja outro h1 para não haver conflito
+*/
+
+.titulo-principal{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 50px;
+    transition: all .5s ease-in-out;
+}
+
+.titulo-principal:hover{
+    transform: translateX(50px) scale(1.2);
+}
+
+/*
+    Vamos estilizar a tag <nav>, vai afetar tudo que está dentro dela 
+*/
+nav{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 50%;
+}
+
+/*
+    Agora vamos estilizar a lista não ordenada dentro do nav e pra fazer isso é o seguinte
+*/
+
+nav ul{
+    /* Remove alguns espaços em branco entre li*/
+    font-size: 0;
+    width: 100%;
+    text-align: right;
+}
+
+/*
+    Ajustando o banner, o # serve para identificar um elemento atribuido com id
+*/
+#banner{
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 65%;
+}
+
+/*
+    Representa toda a div <section>
+*/
+.conteudo-principal{
+    background-color: rgb(253, 196, 127);
+    padding: 30px;
+}
+
+/*
+    Representa a class atribuída a tag h2
+*/
+.titulo-centralizado{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+/*
+    Estilizando a parte que fala da missão do restaurante
+*/
+#missao{
+    background-color: rgb(255, 218, 173);
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px #1f221f;
+    font-size: 20;
+    margin: 20px auto;
+    padding: 15px;
+    text-align: center;
+    width: 50%;
+}
+
+/*Estilizando o a tag <strong> que está dentro da tag <em>*/
+em strong{
+    color: #1f221f;
+}
+
+/*Estilizando a class serviços que é uma <section>*/
+.servicos{
+    background-color: rgb(250, 214, 124);
+    padding: 30px;
+}
+
+/*
+    Estilizando a ul que é a nossa lista não ordenada que usamos para listar os serviços
+    Aqui usamos a propriedade display.
+*/
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-right: 10%;
+}
+
+/*O inline block que usamos é semelhante ao inline normal, mas o inline-block permite que a 
+gente possa usar as propriedades de largura e altura (width e height).
+
+O usamos para que a imagem do serviço fique do lado da lista <ul>, vamos manter alinhado já que a
+imagem é maior que a lista e ajustamos o ul para que não fique no limite com a imagem.
+*/
+
+/* O próximo estilizado agora será as li que foram atribuidas com a class item*/
+
+.item{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.imagem-servicos{
+    width: 50%;
+    height: 300px;
+    object-fit: cover;  
+            /* vertical ||horizontal*/
+    object-position: 0% 10%;
+}
+
+
+

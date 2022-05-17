@@ -1,0 +1,17 @@
+/*Essa tag <p> é a que está dentro do <body>*/
+p{ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    font-size: medium;
+}
+
+/*Agora vamos estilizar o <p> que está dentro da section*/
+section p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: teal;
+    font-weight: bolder;
+    font-size: large;
+}
+
+/*Para fazer o que foi comentado no comentário anterior, precisamos
+colocar a tag que está abrigando a tag <p> que no caso é a tag <section>*/
